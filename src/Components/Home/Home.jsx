@@ -26,6 +26,9 @@ const Home = () => {
         <NavLink to="/main">Main</NavLink>
         <NavLink to="/navigation">Navigation</NavLink>
         <NavLink to="/app">App</NavLink>
+        <NavLink to="/albums">Albums</NavLink>
+        <NavLink to="/users">Users</NavLink>
+        <NavLink to="/comments">Comments</NavLink>
       </nav>
     </div>
   );
