@@ -22,11 +22,15 @@ const Home = () => {
           <a href="/app">App</a>
         </li> */}
 
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/">
+          {({ isPending }) => <p>Home {isPending && <p>Loading....</p>}</p>}
+        </NavLink>
         <NavLink to="/main">Main</NavLink>
         <NavLink to="/navigation">Navigation</NavLink>
         <NavLink to="/app">App</NavLink>
-        <NavLink to="/albums">Albums</NavLink>
+        <NavLink to="/albums">
+          {({ isPending }) => <p>Album {isPending && <p>Loading....</p>}</p>}
+        </NavLink>
         <NavLink to="/users">Users</NavLink>
         <NavLink to="/comments">Comments</NavLink>
       </nav>

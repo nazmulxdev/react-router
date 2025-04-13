@@ -6,7 +6,7 @@ const UserDetails = () => {
 
   const navigateData = useNavigate();
   const handledNavigate = () => {
-    navigateData("/users");
+    navigateData(-1);
   };
   console.log(userDetails);
   return (
